@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>TRACK</title>
+        <style>
+            /* svg { position: relative; z-index:1; top:0; left:0; height:100%; width:100% }
+            div { position: relative; z-index:2; margin-top: 10px; margin-left:10px} */
+        </style>
+    </head>
+
+    <body>
+        <audio id="audioElement1" crossOrigin="anonymous" src="https://p.scdn.co/mp3-preview/d66e79cbe28a705b3262b4762e6b71d2081a3787?cid=774b29d4f13844c495f206cafdad9c86"></audio>
+        <div id="#the-1975">
+            <button onclick="document.getElementById('audioElement1').play()">The 1975 – "A Change of Heart"</button>
+            <button onclick="document.getElementById('audioElement1').pause()">Pause the Audio</button>
+        </div>
+        <audio id="audioElement2" crossOrigin="anonymous" src="https://p.scdn.co/mp3-preview/1799cf995c741bbf11d5fb2859d4d199264ed80f?cid=774b29d4f13844c495f206cafdad9c86"></audio>
+        <div id="#never-shout-never">
+            <button onclick="document.getElementById('audioElement2').play()">Never Shout Never – "I Love You 5"</button>
+            <button onclick="document.getElementById('audioElement2').pause()">Pause the Audio</button>
+        </div>
+        <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+        <script src="https://d3js.org/d3.v5.js" charset="utf-8"></script>
+        <script src="app.js"></script>
+    </body>
+</html>
