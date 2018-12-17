@@ -2,6 +2,12 @@ $(document).ready(function () {
 
     var audioCtx = new (window.AudioContext || window.webkitAudioContext)();
 
+    document.querySelector('button').addEventListener('click', function() {
+        audioCtx.resume().then(() => {
+          console.log('Playback resumed successfully');
+        });
+      });
+
     var svgHeight = '300';
     var svgWidth = '300';
     var barPadding = '1';
